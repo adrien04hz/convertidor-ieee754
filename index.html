@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilos.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <title>IEEE 754</title>
+    </head>
+    <body>
+        <div class="main_container">
+            <br><br><br>
+
+            <h2 class="titulo2">
+                IEEE-754 CONVERTIDOR
+            </h2>
+
+            <br><br>
+
+            <div class="texto_signo">
+                <div class="texto">
+                    <p>Value:</p>
+                    <p>Encoded as:</p>
+                    <p>Binary:</p>
+                </div>
+
+                <div class="signo">
+                    <p>Signo</p>
+                    <p id="signo_numero">+1</p>
+                    
+                    <p id="code_sign">0</p>
+    
+                    <div class="signooo">
+                        <input type="checkbox" id="signob">
+                    </div>
+                </div>
+
+                <div class="exponente1">
+                    <p>Exponente</p>
+                    <p>2<sup id="exponente">-126</sub></p>
+                    <p id="code_exponente">0</p>
+                    
+                    <div class="codificacion_checkbox">
+                        <div class="primeros4">
+                            <input type="checkbox" id="e1">
+                            <input type="checkbox" id="e2">
+                            <input type="checkbox" id="e3">
+                            <input type="checkbox" id="e4">
+                        </div>
+                        
+                        <div class="segundo4">
+                            <input type="checkbox" id="e5">
+                            <input type="checkbox" id="e6">
+                            <input type="checkbox" id="e7">
+                            <input type="checkbox" id="e8">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mantissa">
+                    <p>Mantissa</p>
+                    <p id="decimales">0</p>
+                    <p id="code_decimales">0</p>
+                    
+                    <div class="mantissa_codificacion">
+                        <div class="cuatro_1">
+                            <input type="checkbox" id="m1">
+                            <input type="checkbox" id="m2">
+                            <input type="checkbox" id="m3">
+                            <input type="checkbox" id="m4">
+                        </div>
+
+                        <div class="cuatro_2">
+                            <input type="checkbox" id="m5">
+                            <input type="checkbox" id="m6">
+                            <input type="checkbox" id="m7">
+                            <input type="checkbox" id="m8">
+                        </div>
+
+                        <div class="cuatro_3">
+                            <input type="checkbox" id="m9">
+                            <input type="checkbox" id="m10">
+                            <input type="checkbox" id="m11">
+                            <input type="checkbox" id="m12">
+                        </div>
+
+                        <div class="cuatro_4">
+                            <input type="checkbox" id="m13">
+                            <input type="checkbox" id="m14">
+                            <input type="checkbox" id="m15">
+                            <input type="checkbox" id="m16">
+                        </div>
+
+                        <div class="cuatro_5">
+                            <input type="checkbox" id="m17">
+                            <input type="checkbox" id="m18">
+                            <input type="checkbox" id="m19">
+                            <input type="checkbox" id="m20">
+                        </div>
+
+                        <div class="tres_6">
+                            <input type="checkbox" id="m21">
+                            <input type="checkbox" id="m22">
+                            <input type="checkbox" id="m23">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="entrada_salida">
+                <div class="bases_salida">
+                    <div class="bases">
+                        <p>Decimal:</p>
+                        <p>Binario:</p>
+                        <p>Hexadecimal:</p>
+                    </div>
+
+                    <div class="salidas">
+                        <p>
+                            <input type="number" id="valor_decimal" value="0">
+                        </p>
+                        
+                        <p>
+                            <input type="text" id="valor_binario" disabled="true" value="00000000000000000000000000000000">
+                        </p>
+
+                        <p>
+                            <input type="text" id="valor_hexadecimal" disabled="true" value="00000000">
+                        </p>
+                    </div>
+                </div>
+                <button class="btn btn-outline-success" onclick="recopilarElementos()">Convertir</button>
+            </div>
+            
+        </div>
+
+        <br><br><br><br><br>
+        <div class="parte_entera">
+            <h1 class="tEntera">
+                Parte Entera
+            </h1>
+
+            <br><br>
+
+            <table class="table table-hover" id="tabla_enteros">
+                <th>Valor</th>
+                <th>Divisor</th>
+                <th>Cociente</th>
+                <th>Residuo</th>
+            </table>
+            <div class="input-group input-group-lg">
+                <input type="text" id="enteroSalidaTabla" value="0">
+            </div>
+        </div>
+
+
+        <br><br><br><br><br>
+        <div class="parte_fracc">
+            <h1 class="tFracc">
+                Parte Fraccionaria
+            </h1>
+
+            <br><br>
+
+            <table class="table table-hover" id="tabla_frac">
+                <th>Valor</th>
+                <th>Multiplicador</th>
+                <th>Producto</th>
+                <th>Digito</th>
+            </table>
+        </div>
+        <script src="proceso.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
+</html>

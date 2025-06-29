@@ -1,0 +1,154 @@
+h1{
+    text-align: center;
+}
+
+.main_container{
+    text-align: center;
+}
+
+.titulo2{
+    text-align: center;
+}
+
+.texto_signo{
+    display: flex;  
+    padding: 0.4em;
+    justify-content: center;
+}
+
+
+.texto{ 
+    padding: 0.4em;
+    text-align: right;
+    padding-top: 44px;
+    border-style: solid;
+}
+
+
+.signo{ 
+    padding: 0.4em;
+    text-align: center;
+    border-style: solid;
+    border-left: hidden;
+}
+
+
+.exponente1{ 
+    padding: 0.4em;
+    text-align: center;
+    border-style: solid;
+    border-left: hidden;
+}
+
+.codificacion_checkbox{
+    display: flex; 
+    flex-wrap: wrap;
+    gap: 1px;
+    padding-top: 5px;
+}
+
+.primeros4{
+    display: flex;
+    margin-right: 0.5em;
+    gap: 1px;
+}
+
+.segundo4{
+    display: flex;
+    gap: 1px;
+}
+
+
+.mantissa{ 
+    padding: 0.4em;
+    text-align: center;
+    border-style: solid;
+    border-left: hidden;
+}
+
+.mantissa_codificacion{
+    display: flex; 
+    flex-wrap: wrap;
+    gap: 1px;
+    padding-top: 5px;
+}
+
+.cuatro_1{
+    display: flex;
+    margin-right: 0.7em;
+    gap: 1px; 
+}
+
+.cuatro_2{
+    display: flex;
+    margin-right: 0.7em;
+    gap: 1px;
+}
+
+.cuatro_3{
+    display: flex;
+    margin-right: 0.7em;
+    gap: 1px;
+}
+
+.cuatro_4{
+    display: flex;
+    margin-right: 0.7em;
+    gap: 1px;
+}
+
+.cuatro_5{
+    display: flex;
+    margin-right: 0.7em;
+    gap: 1px;
+}
+
+.tres_6{
+    display: flex;
+    gap: 1px;
+}
+
+.bases_salida{
+    display: flex;
+    justify-content: center;
+}
+
+.bases{
+    padding: 20px;
+    padding-top: 25px;
+    padding-right: 0px;
+    text-align: right;
+}
+.salidas{
+    padding: 20px;
+    padding-left: 10px;
+}
+
+#valor_decimal{
+    width: 700px;
+}
+
+#valor_binario{
+    width: 700px;
+}
+
+#valor_hexadecimal{
+    width: 700px;
+}
+
+#tabla_frac{
+    text-align: center;
+}
+
+#tabla_enteros{
+    text-align: center;
+}
+
+#enteroSalidaTabla{
+    border-radius: 10px;
+    height: 50px;
+    width: 400px;
+    background-color: rgba(211, 211, 211, 0.487);
+    margin-left: 20px;
+    border: hidden;
+}
